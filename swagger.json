@@ -205,16 +205,16 @@
                  "age": {
                   "example": "any"
                 },
-                 "class": {
+                 "level": {
                   "example": "any"
                 },
                  "gender": {
                   "example": "any"
                 },
-                "association": {
+                "major": {
                   "example": "any"
                 },
-                "favoriteSubject": {
+                "association": {
                   "example": "any"
                 },
                 "GPA": {
@@ -287,16 +287,16 @@
                  "age": {
                   "example": "any"
                 },
-                 "class": {
+                 "level": {
                   "example": "any"
                 },
                  "gender": {
                   "example": "any"
                 },
-                "association": {
+                "major": {
                   "example": "any"
                 },
-                "favoriteSubject": {
+                "association": {
                   "example": "any"
                 },
                 "GPA": {
