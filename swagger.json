@@ -5,7 +5,7 @@
     "description": "User API",
     "version": "1.0.0"
   },
-  "host": "localhost:5001",
+  "host": "cse341-students-1.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
