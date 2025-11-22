@@ -1,0 +1,17 @@
+
+
+const express = require('express');
+
+const router = express.Router();
+
+
+const personalInfo = require('../controllers/personalInfo');
+
+router.get('/', personalInfo.getAll);
+router.get('/:id', personalInfo.getSingle);
+router.post('/', personalInfo.createPersonalInfo);
+router.put('/:id', personalInfo.updatePersonalInfo);
+router.delete('/:id', personalInfo.deletePersonalInfo);
+
+module.exports = router;
+
