@@ -7,17 +7,14 @@ GET  http://localhost:5001/info
 GET http://localhost:5001/info/691fdd8bc87062e90b83b51f
 
 ### Create new course
-POST http://localhost:5001/info HTTP/1.1
+POST http://localhost:5001/course HTTP/1.1
 Content-Type: application/json
 
 {
-"name": "Mary",
-"age": "17",
-"level": "Freshman",
-"gender": "Female",
-"major": "Nursing Science",
-"association": "National Association of Nursing Students.",
-"GPA": 5.0
+"title": "any",
+  "code": "any",
+  "instructor": "any",
+  "department": "any"
 }
 
 ### Update Course
