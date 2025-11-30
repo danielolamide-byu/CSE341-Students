@@ -16,7 +16,7 @@ const mongodb = require('./data/database');
 const passport = require('passport');
 const expressSession = require('express-session');
 const GitHubStratgy = require('passport-github2').Strategy
-const port = process.env.PORT || 5001; 
+const port = process.env.PORT || 8080; 
 
 const app = express();
 app.use(bodyParser.json())
