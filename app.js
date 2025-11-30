@@ -14,13 +14,13 @@ const cors = require('cors');
 
 const mongodb = require('./data/database');
 const passport = require('passport');
-const session = require('express-session');
+const expressSession = require('express-session');
 const GitHubStratgy = require('passport-github2').Strategy
 const port = process.env.PORT || 5001; 
 
 const app = express();
 app.use(bodyParser.json())
-  .use(session({
+  .use(expressSession({
     secret: "secret",
     resave: false,
     saveUninitialized: true,
@@ -57,7 +57,7 @@ passport.deserializeUser((user, done) => {
 });
 
 app.get('/', (req, res) => {
-  res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out");
+  res.send(req.session.user !== undefined ? `Logged in as ${req.session.user.displayName}` : "Logged Out")
 })
 
 app.get('/github/callback', passport.authenticate('github', {
