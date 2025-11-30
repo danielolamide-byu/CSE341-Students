@@ -9,7 +9,7 @@ const { isAuthenticated } = require('../middleware/authenticate');
 router.get('/', courses.getAll);
 
 router.get('/:id', courses.getSingle)
-router.post('/', isAuthenticated, courses.createCourse)
+router.post('/', courses.createCourse)
 router.put('/:id', isAuthenticated, courses.updateCourse)
 router.delete('/:id', isAuthenticated, courses.deleteCourse)
 
