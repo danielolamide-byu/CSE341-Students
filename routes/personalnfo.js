@@ -11,9 +11,9 @@ const { isAuthenticated } = require('../middleware/authenticate');
 
 router.get('/', personalInfo.getAll);
 router.get('/:id', personalInfo.getSingle);
-router.post('/', personalInfo.createPersonalInfo);
-router.put('/:id',  personalInfo.updatePersonalInfo);
-router.delete('/:id', personalInfo.deletePersonalInfo);
+router.post('/', isAuthenticated, personalInfo.createPersonalInfo);
+router.put('/:id',  isAuthenticated, personalInfo.updatePersonalInfo);
+router.delete('/:id', isAuthenticated, personalInfo.deletePersonalInfo);
 
 module.exports = router;
 
